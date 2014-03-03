@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0DBCB1F-3352-47DB-BDE1-5A712B6068E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xk3yScanner</RootNamespace>
+    <AssemblyName>xk3yScanner 2.0</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>xkey.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>xk3yScanner.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ObjectListView, Version=2.5.1.28055, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AbgStatus.cs" />
+    <Compile Include="Classes\Items.cs" />
+    <Compile Include="Classes\Processors\Helpers\AbgxProcessor.cs" />
+    <Compile Include="Classes\Processors\Helpers\ExeProcessor.cs" />
+    <Compile Include="Classes\Processors\Helpers\AbgxNameLookup.cs" />
+    <Compile Include="Classes\Game.cs" />
+    <Compile Include="Classes\ListViewColumnSorter.cs" />
+    <Compile Include="Classes\Processors\Helpers\MoveAsync.cs" />
+    <Compile Include="Classes\Processors\AbgxChecker.cs" />
+    <Compile Include="Classes\Processors\Helpers\BaseProcessor.cs" />
+    <Compile Include="Classes\Processors\GameScanner.cs" />
+    <Compile Include="Classes\Processors\MoveProcessor.cs" />
+    <Compile Include="Classes\Processors\WebScrapper.cs" />
+    <Compile Include="Classes\ScannerInfo.cs" />
+    <Compile Include="Classes\Utils.cs" />
+    <Compile Include="Classes\Visibility.cs" />
+    <Compile Include="Control\TextProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CoverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoverForm.Designer.cs">
+      <DependentUpon>CoverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSVExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSVExport.Designer.cs">
+      <DependentUpon>CSVExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSV\CsvDecoder.cs" />
+    <Compile Include="CSV\CsvEncoder.cs" />
+    <Compile Include="CSV\Data\CsvData.cs" />
+    <Compile Include="CSV\Data\CsvRecord.cs" />
+    <Compile Include="CSV\FieldFormatOption.cs" />
+    <Compile Include="CSV\Pair.cs" />
+    <Compile Include="CSV\Parser.cs" />
+    <Compile Include="CSV\ParserInput.cs" />
+    <Compile Include="CSV\TextInput.cs" />
+    <Compile Include="CSV\TextParserCommon.cs" />
+    <Compile Include="Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BannerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BannerForm.Designer.cs">
+      <DependentUpon>BannerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExceptionForm.Designer.cs">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoItems.Designer.cs">
+      <DependentUpon>InfoItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Waffle\GameInfo.cs" />
+    <Compile Include="Objects\Waffle\InfoItem.cs" />
+    <Compile Include="Objects\Waffle\Trailer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings1.cs" />
+    <Compile Include="xkeyBrew\BLBinaryReader\EndianType.cs" />
+    <Compile Include="xkeyBrew\BLBinaryReader\MyBinaryReader.cs" />
+    <Compile Include="xkeyBrew\DvdReader\DvdMenuReadSectors.cs" />
+    <Compile Include="xkeyBrew\DvdReader\VTSM_PGCI_LU_MENU.cs" />
+    <Compile Include="xkeyBrew\DvdReader\VTSM_PGCI_LU_MENUS.cs" />
+    <Compile Include="xkeyBrew\DvdReader\VTSM_PGCI_UT.cs" />
+    <Compile Include="xkeyBrew\IsoGameReader\DefaultXeX.cs" />
+    <Compile Include="xkeyBrew\IsoGameReader\Iso.cs" />
+    <Compile Include="xkeyBrew\IsoGameReader\IsoInfo.cs" />
+    <Compile Include="xkeyBrew\IsoGameReader\IsoType.cs" />
+    <Compile Include="xkeyBrew\IsoGameReader\ObjectCopier.cs" />
+    <Compile Include="xkeyBrew\IsoGameReader\XeXHeader.cs" />
+    <Compile Include="xkeyBrew\Shared\ISharedMethods.cs" />
+    <EmbeddedResource Include="CoverForm.resx">
+      <DependentUpon>CoverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSVExport.resx">
+      <DependentUpon>CSVExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BannerForm.resx">
+      <DependentUpon>BannerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExceptionForm.resx">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoItems.resx">
+      <DependentUpon>InfoItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\abgx360.bin" />
+    <None Include="Resources\banner.bin" />
+    <None Include="Resources\cover.bin" />
+    <None Include="xk3yScanner.manifest" />
+    <None Include="xkey.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\None.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <UsingTask TaskName="ILMerge.MSBuild.Tasks.ILMerge" AssemblyFile="$(SolutionDir)\packages\ILMerge.MSBuild.Tasks.1.0.0.3\tools\ILMerge.MSBuild.Tasks.dll" />
+  <Target Name="AfterBuild">
+    <ItemGroup>
+      <MergeAsm Include="$(OutputPath)$(TargetFileName)" />
+      <MergeAsm Include="$(OutputPath)ObjectListView.dll" />
+    </ItemGroup>
+    <PropertyGroup>
+      <MergedAssembly>$(ProjectDir)$(OutDir)xk3yScanner 2.0_merged.exe</MergedAssembly>
+    </PropertyGroup>
+    <Message Text="ILMerge @(MergeAsm) -&gt; $(MergedAssembly)" Importance="high" />
+    <ILMerge InputAssemblies="@(MergeAsm)" OutputFile="$(MergedAssembly)" TargetKind="SameAsPrimaryAssembly" />
+  </Target>
+</Project>

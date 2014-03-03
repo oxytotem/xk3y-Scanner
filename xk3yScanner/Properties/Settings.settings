@@ -1,0 +1,228 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="xk3yScanner.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="menuRename" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="menuPrefer3DCovers" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="formLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="formSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">912, 547</Value>
+    </Setting>
+    <Setting Name="gamePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="youtubeUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://youtube.googleapis.com/v/{video}&amp;hl=sv</Value>
+    </Setting>
+    <Setting Name="xboxUri" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://marketplace.xbox.com/{place}/Product/66acd000-77fe-1000-9115-d802{titleid}?nosplash=1</Value>
+    </Setting>
+    <Setting Name="xboxRegex" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;div class=\"Text\"&gt;.*?&lt;p&gt;(?&lt;summary&gt;.*?)&lt;/p&gt;.*?class=\"grid-6\".*?&lt;img alt=\"(?&lt;title&gt;.*?)\"*.?class=\"boxart\".*?src=\"(?&lt;coverurl&gt;.*?)\"(.*?(Developer:|開発元:)&lt;/label&gt;(?&lt;developer&gt;.*?)&lt;/li&gt;.*?|.*?)(Publisher:|発売元:)&lt;/label&gt;(?&lt;publisher&gt;.*?)&lt;/li&gt;.*?(Genre:|ジャンル:)&lt;/label&gt;(?&lt;genre&gt;.*?)&lt;/li&gt;</Value>
+    </Setting>
+    <Setting Name="spiffyUri" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://spiffycovers.com/covers/view/360/{titleid}/</Value>
+    </Setting>
+    <Setting Name="spiffyRegex" Type="System.String" Scope="User">
+      <Value Profile="(Default)">class="cover_downloads_title"&gt;(.*?)&lt;/h2&gt;.*?class="cover_downloads_3d"&gt;.*?&lt;a href="(.*?)&gt;.*?class="cover_downloads_front"&gt;.*?&lt;a href="(.*?)&gt;</Value>
+    </Setting>
+    <Setting Name="spiffy3DCover" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://spiffycovers.com/cover/{titleid}/360/3D/</Value>
+    </Setting>
+    <Setting Name="spiffyFrontCover" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://spiffycovers.com/cover/{titleid}/360/front/</Value>
+    </Setting>
+    <Setting Name="xboxCover" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://download.xbox.com/content/images/66acd000-77fe-1000-9115-d802{titleid}/1033/boxartlg.jpg</Value>
+    </Setting>
+    <Setting Name="xboxBanner" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://download.xbox.com/content/images/66acd000-77fe-1000-9115-d802{titleid}/1033/banner.png</Value>
+    </Setting>
+    <Setting Name="youtubeUri" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://gdata.youtube.com/feeds/api/videos?category=XBOX360|360&amp;genre=24&amp;q={title}+Trailer</Value>
+    </Setting>
+    <Setting Name="youtubeRegex" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;id&gt;http://gdata.youtube.com/feeds/api/videos/(.*?)&lt;/id&gt;.*?&lt;title.*?&gt;(.*?)&lt;/title&gt;.*?&lt;author&gt;.*?&lt;name&gt;(.*?)&lt;/name&gt;</Value>
+    </Setting>
+    <Setting Name="youtubeviewurl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.youtube.com/v/{video}</Value>
+    </Setting>
+    <Setting Name="abgxNameLookUpUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://abgx360.net/Apps/Stealth360/GameNameLookup.csv</Value>
+    </Setting>
+    <Setting Name="abgxGameNameLookup" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="abgxGameNameLookupETAG" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="editLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="editSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">912, 517</Value>
+    </Setting>
+    <Setting Name="gfxPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="chkGenre" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="chkTrailer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="chkPublisher" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="chkDeveloper" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="chkDiscs" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="chkGameType" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="chkGameDate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="chkAbgxInfo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ActiveFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="InActiveFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AbgxArguments" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-t --af3 --max -- "{0}"</Value>
+    </Setting>
+    <Setting Name="InActiveFolders" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FolderStructure" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="GenreTranslation" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;アクション&lt;/string&gt;
+  &lt;string&gt;Action&lt;/string&gt;
+  &lt;string&gt;アドベンチャー&lt;/string&gt;
+  &lt;string&gt;Adventure&lt;/string&gt;
+  &lt;string&gt;シューティング&lt;/string&gt;
+  &lt;string&gt;Shooter&lt;/string&gt;
+  &lt;string&gt;ファミリー&lt;/string&gt;
+  &lt;string&gt;Family&lt;/string&gt;
+  &lt;string&gt;格闘&lt;/string&gt;
+  &lt;string&gt;Fighting&lt;/string&gt;
+  &lt;string&gt;スポーツ&lt;/string&gt;
+  &lt;string&gt;Sports&lt;/string&gt;
+  &lt;string&gt;レクリエーション&lt;/string&gt;
+  &lt;string&gt;Recreation&lt;/string&gt;
+  &lt;string&gt;アバター&lt;/string&gt;
+  &lt;string&gt;Avatar&lt;/string&gt;
+  &lt;string&gt;戦略&lt;/string&gt;
+  &lt;string&gt;Strategy&lt;/string&gt;
+  &lt;string&gt;シミュレーション&lt;/string&gt;
+  &lt;string&gt;Simulation&lt;/string&gt;
+  &lt;string&gt;RPG&lt;/string&gt;
+  &lt;string&gt;Role Playing&lt;/string&gt;
+  &lt;string&gt;レース&lt;/string&gt;
+  &lt;string&gt;Racing&lt;/string&gt;
+  &lt;string&gt;フライト&lt;/string&gt;
+  &lt;string&gt;Flying&lt;/string&gt;
+  &lt;string&gt;パズル&lt;/string&gt;
+  &lt;string&gt;Puzzle&lt;/string&gt;
+  &lt;string&gt;雑学クイズ&lt;/string&gt;
+  &lt;string&gt;Trivia&lt;/string&gt;
+  &lt;string&gt;キャラクター アクション&lt;/string&gt;
+  &lt;string&gt;Platformer&lt;/string&gt;
+  &lt;string&gt;その他&lt;/string&gt;
+  &lt;string&gt;Other&lt;/string&gt;
+  &lt;string&gt;音楽&lt;/string&gt;
+  &lt;string&gt;Music&lt;/string&gt;
+  &lt;string&gt;エデュテイメント&lt;/string&gt;
+  &lt;string&gt;Educational&lt;/string&gt;
+  &lt;string&gt;テーブル ゲーム&lt;/string&gt;
+  &lt;string&gt;Card &amp;amp; Board&lt;/string&gt;
+  &lt;string /&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultRegion" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="chkRegionCode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="csvItems" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="xboxStores" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Argentina|es-AR&lt;/string&gt;
+  &lt;string&gt;Australia|en-AU&lt;/string&gt;
+  &lt;string&gt;België|nl-BE&lt;/string&gt;
+  &lt;string&gt;Belgique|fr-BE&lt;/string&gt;
+  &lt;string&gt;Brasil|pt-BR&lt;/string&gt;
+  &lt;string&gt;Canada (English)|en-CA&lt;/string&gt;
+  &lt;string&gt;Canada (Français)|fr-CA&lt;/string&gt;
+  &lt;string&gt;Česká republika|cs-CZ&lt;/string&gt;
+  &lt;string&gt;Chile|es-CL&lt;/string&gt;
+  &lt;string&gt;Colombia|es-CO&lt;/string&gt;
+  &lt;string&gt;Danmark|da-DK&lt;/string&gt;
+  &lt;string&gt;Deutschland|de-DE&lt;/string&gt;
+  &lt;string&gt;España|es-ES&lt;/string&gt;
+  &lt;string&gt;Ελλάδα|el-GR&lt;/string&gt;
+  &lt;string&gt;France|fr-FR&lt;/string&gt;
+  &lt;string&gt;Hong Kong S.A.R. (香港)|zh-HK&lt;/string&gt;
+  &lt;string&gt;Hong Kong S.A.R. (English)|en-HK&lt;/string&gt;
+  &lt;string&gt;India|en-IN&lt;/string&gt;
+  &lt;string&gt;Ireland|en-IE&lt;/string&gt;
+  &lt;string&gt;Israel|he-IL&lt;/string&gt;
+  &lt;string&gt;Italia|it-IT&lt;/string&gt;
+  &lt;string&gt;日本 (Japan)ja-JP|&lt;/string&gt;
+  &lt;string&gt;대한민국 (Korea)|ko-KR&lt;/string&gt;
+  &lt;string&gt;Magyarország|hu-HU&lt;/string&gt;
+  &lt;string&gt;México|es-MX&lt;/string&gt;
+  &lt;string&gt;Nederland|nl-NL&lt;/string&gt;
+  &lt;string&gt;New Zealand|en-NZ&lt;/string&gt;
+  &lt;string&gt;Norge|nb-NO&lt;/string&gt;
+  &lt;string&gt;Österreich|de-AT&lt;/string&gt;
+  &lt;string&gt;Polska|pl-PL&lt;/string&gt;
+  &lt;string&gt;Portugal|pt-PT&lt;/string&gt;
+  &lt;string&gt;Pоссия|ru-RU&lt;/string&gt;
+  &lt;string&gt;Saudi Arabia|ar-SA&lt;/string&gt;
+  &lt;string&gt;Schweiz|de-CH&lt;/string&gt;
+  &lt;string&gt;Singapore|en-SG&lt;/string&gt;
+  &lt;string&gt;Slovakia|sk-SK&lt;/string&gt;
+  &lt;string&gt;South Africa|en-ZA&lt;/string&gt;
+  &lt;string&gt;Suisse|fr-CH&lt;/string&gt;
+  &lt;string&gt;Suomi|fi-FI&lt;/string&gt;
+  &lt;string&gt;Sverige|sv-SE&lt;/string&gt;
+  &lt;string&gt;台灣 (Taiwan)|zh-TW&lt;/string&gt;
+  &lt;string&gt;Türkiye|tr-TR&lt;/string&gt;
+  &lt;string&gt;United Arab Emirates|ar-AE&lt;/string&gt;
+  &lt;string&gt;United Kingdom|en-GB&lt;/string&gt;
+  &lt;string&gt;United States|en-US&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultStore" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en-US</Value>
+    </Setting>
+    <Setting Name="chkOverwriteImages" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="txtTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{Title} {OptStrDisc} [{MediaId}][{Regions}]</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
